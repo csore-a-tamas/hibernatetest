@@ -42,7 +42,7 @@ INSERT INTO `test`.`e` (`id`, `some_field`) VALUES ('51', 'd_51');
 
 /*
 
-The data in JSON:
+With these queries we build the the following relations, in the view from 'a'.
 
 {
 	"id": 10,
