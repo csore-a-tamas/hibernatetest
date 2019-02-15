@@ -1,0 +1,737 @@
+JPDA Listening Start...
+JPDA Address: DESKTOP-04PP6FP:58837
+Port:58837
+cd C:\Projects\HibernateTest; "JAVA_HOME=C:\\Program Files\\Java\\jdk1.8.0_162" M2_HOME=C:\\ProgramFiles\\apache-maven-3.6.0 cmd /c "\"\"C:\\ProgramFiles\\apache-maven-3.6.0\\bin\\mvn.cmd\" -Dexec.args=\"-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=58837 -classpath %classpath csat.hibernatetest.Application\" -Dexec.executable=\"C:\\Program Files\\Java\\jdk1.8.0_162\\bin\\java.exe\" -Djpda.listen=true -Djpda.address=58837 -Dmaven.ext.class.path=\"C:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar\" -Dfile.encoding=UTF-8 org.codehaus.mojo:exec-maven-plugin:1.2.1:exec\""
+Running NetBeans Compile On Save execution. Phase execution is skipped and output directories of dependency projects (with Compile on Save turned on) will be used instead of their jar artifacts.
+Scanning for projects...
+
+-------------------------< csat:HibernateTest >-------------------------
+Building HibernateTest 1.0-SNAPSHOT
+--------------------------------[ jar ]---------------------------------
+
+--- exec-maven-plugin:1.2.1:exec (default-cli) @ HibernateTest ---
+APPLICATION STARTED
+0 [main] INFO main  - CREATE SESSION
+71 [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+90 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+95 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+105 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+238 [main] INFO org.hibernate.Version  - HHH000412: Hibernate Core {5.4.1.Final}
+239 [main] DEBUG org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+462 [main] DEBUG HibernateUtil  - JPA LOADED: csat.hibernatetest.jpa.E: class csat.hibernatetest.jpa.E
+462 [main] DEBUG HibernateUtil  - JPA LOADED: csat.hibernatetest.jpa.B: class csat.hibernatetest.jpa.B
+462 [main] DEBUG HibernateUtil  - JPA LOADED: csat.hibernatetest.jpa.C: class csat.hibernatetest.jpa.C
+462 [main] DEBUG HibernateUtil  - JPA LOADED: csat.hibernatetest.jpa.A: class csat.hibernatetest.jpa.A
+462 [main] DEBUG HibernateUtil  - JPA LOADED: csat.hibernatetest.jpa.D: class csat.hibernatetest.jpa.D
+463 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+463 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+463 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+471 [main] DEBUG org.hibernate.service.spi.ServiceBinding  - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+471 [main] DEBUG org.hibernate.cfg.Configuration  - Building session factory using provided StandardServiceRegistry
+481 [main] DEBUG org.hibernate.cache.internal.RegionFactoryInitiator  - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+482 [main] DEBUG org.hibernate.cache.internal.RegionFactoryInitiator  - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+498 [main] INFO org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+638 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@44c73c26
+638 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@44c73c26
+638 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@44c73c26
+639 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2141a12
+640 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration true_false -> org.hibernate.type.TrueFalseType@20435c40
+640 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration yes_no -> org.hibernate.type.YesNoType@571c5681
+641 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@7fbdb894
+641 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@7fbdb894
+641 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7fbdb894
+643 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration character -> org.hibernate.type.CharacterType@59e32960
+643 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char -> org.hibernate.type.CharacterType@59e32960
+643 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@59e32960
+644 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@3d246ea3
+644 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@3d246ea3
+644 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3d246ea3
+646 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration integer -> org.hibernate.type.IntegerType@71329995
+646 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration int -> org.hibernate.type.IntegerType@71329995
+646 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@71329995
+648 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@1ab06251
+648 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@1ab06251
+648 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Long -> org.hibernate.type.LongType@1ab06251
+649 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@43b9fd5
+649 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@43b9fd5
+649 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@43b9fd5
+651 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@45a37759
+651 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@45a37759
+651 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@45a37759
+653 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7d9e8ef7
+653 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7d9e8ef7
+654 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@44d52de2
+654 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@44d52de2
+655 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration string -> org.hibernate.type.StringType@ae3540e
+655 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.String -> org.hibernate.type.StringType@ae3540e
+656 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7922d892
+656 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3f57bcad
+657 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration url -> org.hibernate.type.UrlType@7daa0fbd
+657 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.net.URL -> org.hibernate.type.UrlType@7daa0fbd
+658 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Duration -> org.hibernate.type.DurationType@291f18
+659 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@291f18
+673 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Instant -> org.hibernate.type.InstantType@7a67e3c6
+673 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7a67e3c6
+675 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@d41f816
+675 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@d41f816
+676 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@27216cd
+676 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@27216cd
+677 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3daf7722
+677 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3daf7722
+678 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1869fbd2
+678 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1869fbd2
+679 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3b7d3a38
+680 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3b7d3a38
+684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@e383572
+684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@e383572
+684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration date -> org.hibernate.type.DateType@c9d0d6
+684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Date -> org.hibernate.type.DateType@c9d0d6
+685 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration time -> org.hibernate.type.TimeType@61544ae6
+685 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@61544ae6
+686 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timestamp -> org.hibernate.type.TimestampType@1603cd68
+686 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@1603cd68
+686 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@1603cd68
+688 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@30e868be
+689 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar -> org.hibernate.type.CalendarType@1e097d59
+689 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1e097d59
+689 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1e097d59
+690 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@54e7df6a
+692 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration locale -> org.hibernate.type.LocaleType@4c1f22f3
+692 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4c1f22f3
+692 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration currency -> org.hibernate.type.CurrencyType@63fbfaeb
+692 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@63fbfaeb
+693 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timezone -> org.hibernate.type.TimeZoneType@76f4b65
+693 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@76f4b65
+693 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration class -> org.hibernate.type.ClassType@524f3b3a
+693 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@524f3b3a
+694 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@7fb95505
+694 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@7fb95505
+694 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@ab7395e
+695 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration binary -> org.hibernate.type.BinaryType@d62fe5b
+695 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte[] -> org.hibernate.type.BinaryType@d62fe5b
+695 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [B -> org.hibernate.type.BinaryType@d62fe5b
+696 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@31c7528f
+696 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@31c7528f
+696 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@31c7528f
+697 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration row_version -> org.hibernate.type.RowVersionType@6bffbc6d
+698 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration image -> org.hibernate.type.ImageType@539d019
+699 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration characters -> org.hibernate.type.CharArrayType@1608bcbd
+699 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char[] -> org.hibernate.type.CharArrayType@1608bcbd
+699 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [C -> org.hibernate.type.CharArrayType@1608bcbd
+700 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@55493582
+700 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@55493582
+700 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@55493582
+700 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration text -> org.hibernate.type.TextType@2f16c6b3
+701 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration ntext -> org.hibernate.type.NTextType@4b79ac84
+702 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration blob -> org.hibernate.type.BlobType@27d4a09
+702 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@27d4a09
+702 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1c481ff2
+704 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration clob -> org.hibernate.type.ClobType@3c9c0d96
+704 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3c9c0d96
+705 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration nclob -> org.hibernate.type.NClobType@1921ad94
+705 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@1921ad94
+705 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6bca7e0d
+705 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@30af5b6b
+706 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration serializable -> org.hibernate.type.SerializableType@63787180
+709 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration object -> org.hibernate.type.ObjectType@6c0d9d86
+709 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6c0d9d86
+709 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1fde5d22
+709 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@5dcb4f5f
+709 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@71812481
+709 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@16ce702d
+710 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7b94089b
+710 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7ca20101
+710 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@47f9738
+710 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6155d082
+730 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+730 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+731 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+731 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+731 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+732 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+732 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+733 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+734 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+734 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+735 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+735 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+735 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+736 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+741 [main] WARN org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+750 [main] INFO org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test?useSSL=false]
+750 [main] INFO org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {user=root, password=root}
+750 [main] INFO org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+753 [main] DEBUG org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - Initializing Connection pool with 1 Connections
+753 [main] INFO org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 1 (min=1)
+920 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator  - Database ->
+       name : MySQL
+    version : 5.7.21-log
+      major : 5
+      minor : 7
+920 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator  - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.12 (Revision: 24766725dc6e017025532146d94c6e6c488fb8f1)
+      major : 8
+      minor : 0
+920 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator  - JDBC version : 4.2
+931 [main] INFO org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+945 [main] DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder  - JDBC driver metadata reported database stores quoted identifiers in more than one case
+949 [main] DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder  - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+995 [main] DEBUG org.hibernate.boot.model.relational.Namespace  - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+1000 [main] DEBUG org.hibernate.type.spi.TypeConfiguration$Scope  - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5ae81e1] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@2fd1731c]
+1053 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - Binding entity from annotated class: csat.hibernatetest.jpa.E
+1072 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+1076 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Import with entity name E
+1079 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Bind entity csat.hibernatetest.jpa.E on table test`.`e
+1100 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`e), mappingColumn=id, insertable=true, updatable=true, unique=false}
+1103 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property id with lazy=false
+1105 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder  - Attempting to locate auto-apply AttributeConverter for property [csat.hibernatetest.jpa.E:id]
+1108 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for id
+1110 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property id
+1114 [main] DEBUG org.hibernate.cfg.BinderHelper  - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+1115 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`e), mappingColumn=some_field, insertable=true, updatable=true, unique=false}
+1115 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property someField with lazy=false
+1115 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder  - Attempting to locate auto-apply AttributeConverter for property [csat.hibernatetest.jpa.E:someField]
+1115 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for someField
+1115 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property someField
+1119 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - Binding entity from annotated class: csat.hibernatetest.jpa.B
+1120 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+1120 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Import with entity name B
+1120 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Bind entity csat.hibernatetest.jpa.B on table test`.`b
+1121 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`b), mappingColumn=id, insertable=true, updatable=true, unique=false}
+1121 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property id with lazy=false
+1121 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder  - Attempting to locate auto-apply AttributeConverter for property [csat.hibernatetest.jpa.B:id]
+1121 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for id
+1121 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property id
+1122 [main] DEBUG org.hibernate.cfg.BinderHelper  - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+1122 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`b), mappingColumn=some_field, insertable=true, updatable=true, unique=false}
+1122 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property someField with lazy=false
+1122 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder  - Attempting to locate auto-apply AttributeConverter for property [csat.hibernatetest.jpa.B:someField]
+1122 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for someField
+1122 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property someField
+1123 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - Binding entity from annotated class: csat.hibernatetest.jpa.C
+1123 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+1124 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Import with entity name C
+1125 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Bind entity csat.hibernatetest.jpa.C on table test`.`c
+1132 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`c), mappingColumn=id, insertable=true, updatable=true, unique=false}
+1132 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property id with lazy=false
+1132 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder  - Attempting to locate auto-apply AttributeConverter for property [csat.hibernatetest.jpa.C:id]
+1132 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for id
+1132 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property id
+1133 [main] DEBUG org.hibernate.cfg.BinderHelper  - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+1135 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3JoinColumn{logicalColumnName='`D_id`', referencedColumn='', mappedBy=''}
+1137 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`c), mappingColumn=d, insertable=true, updatable=true, unique=false}
+1141 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property d
+1143 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`c), mappingColumn=some_field, insertable=true, updatable=true, unique=false}
+1143 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property someField with lazy=false
+1143 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder  - Attempting to locate auto-apply AttributeConverter for property [csat.hibernatetest.jpa.C:someField]
+1143 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for someField
+1143 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property someField
+1143 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - Binding entity from annotated class: csat.hibernatetest.jpa.A
+1144 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+1144 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Import with entity name A
+1144 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Bind entity csat.hibernatetest.jpa.A on table test`.`a
+1145 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`a), mappingColumn=id, insertable=true, updatable=true, unique=false}
+1145 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property id with lazy=false
+1145 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder  - Attempting to locate auto-apply AttributeConverter for property [csat.hibernatetest.jpa.A:id]
+1145 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for id
+1146 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property id
+1146 [main] DEBUG org.hibernate.cfg.BinderHelper  - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+1146 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3JoinColumn{logicalColumnName='`B_id`', referencedColumn='', mappedBy=''}
+1146 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`a), mappingColumn=b, insertable=true, updatable=true, unique=false}
+1146 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property b
+1146 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3JoinColumn{logicalColumnName='`C_id`', referencedColumn='', mappedBy=''}
+1147 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`a), mappingColumn=c, insertable=true, updatable=true, unique=false}
+1147 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property c
+1147 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3JoinColumn{logicalColumnName='`D_id`', referencedColumn='', mappedBy=''}
+1147 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`a), mappingColumn=d, insertable=true, updatable=true, unique=false}
+1148 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property d
+1149 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`a), mappingColumn=some_field, insertable=true, updatable=true, unique=false}
+1149 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property someField with lazy=false
+1149 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder  - Attempting to locate auto-apply AttributeConverter for property [csat.hibernatetest.jpa.A:someField]
+1149 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for someField
+1149 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property someField
+1150 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - Binding entity from annotated class: csat.hibernatetest.jpa.D
+1150 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+1150 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Import with entity name D
+1150 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Bind entity csat.hibernatetest.jpa.D on table test`.`d
+1151 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`d), mappingColumn=id, insertable=true, updatable=true, unique=false}
+1152 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property id with lazy=false
+1152 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder  - Attempting to locate auto-apply AttributeConverter for property [csat.hibernatetest.jpa.D:id]
+1152 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for id
+1152 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property id
+1152 [main] DEBUG org.hibernate.cfg.BinderHelper  - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+1152 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3JoinColumn{logicalColumnName='`E_id`', referencedColumn='', mappedBy=''}
+1152 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`d), mappingColumn=e, insertable=true, updatable=true, unique=false}
+1152 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property e
+1152 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test`.`d), mappingColumn=some_field, insertable=true, updatable=true, unique=false}
+1153 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property someField with lazy=false
+1153 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder  - Attempting to locate auto-apply AttributeConverter for property [csat.hibernatetest.jpa.D:someField]
+1153 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for someField
+1153 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property someField
+1154 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Starting fillSimpleValue for id
+1154 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Starting fillSimpleValue for someField
+1154 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Starting fillSimpleValue for id
+1154 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Starting fillSimpleValue for someField
+1154 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Starting fillSimpleValue for id
+1154 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Starting fillSimpleValue for someField
+1154 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Starting fillSimpleValue for id
+1154 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Starting fillSimpleValue for someField
+1154 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Starting fillSimpleValue for id
+1154 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Starting fillSimpleValue for someField
+1159 [main] DEBUG org.hibernate.mapping.PrimaryKey  - Forcing column [id] to be non-null as it is part of the primary key for table [test`.`e]
+1159 [main] DEBUG org.hibernate.mapping.PrimaryKey  - Forcing column [id] to be non-null as it is part of the primary key for table [test`.`b]
+1159 [main] DEBUG org.hibernate.mapping.PrimaryKey  - Forcing column [id] to be non-null as it is part of the primary key for table [test`.`c]
+1159 [main] DEBUG org.hibernate.mapping.PrimaryKey  - Forcing column [id] to be non-null as it is part of the primary key for table [test`.`a]
+1159 [main] DEBUG org.hibernate.mapping.PrimaryKey  - Forcing column [id] to be non-null as it is part of the primary key for table [test`.`d]
+1159 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl  - Resolving reference to class: csat.hibernatetest.jpa.B
+1162 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl  - Resolving reference to class: csat.hibernatetest.jpa.C
+1162 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl  - Resolving reference to class: csat.hibernatetest.jpa.D
+1162 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl  - Resolving reference to class: csat.hibernatetest.jpa.D
+1163 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl  - Resolving reference to class: csat.hibernatetest.jpa.E
+1175 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl  - Resolving reference to class: csat.hibernatetest.jpa.B
+1176 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl  - Resolving reference to class: csat.hibernatetest.jpa.C
+1176 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl  - Resolving reference to class: csat.hibernatetest.jpa.D
+1176 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl  - Resolving reference to class: csat.hibernatetest.jpa.D
+1176 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl  - Resolving reference to class: csat.hibernatetest.jpa.E
+1207 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Building session factory
+1208 [main] DEBUG org.hibernate.cfg.Settings  - SessionFactory name : null
+1208 [main] DEBUG org.hibernate.cfg.Settings  - Automatic flush during beforeCompletion(): enabled
+1208 [main] DEBUG org.hibernate.cfg.Settings  - Automatic session close at end of transaction: disabled
+1208 [main] DEBUG org.hibernate.cfg.Settings  - Statistics: disabled
+1208 [main] DEBUG org.hibernate.cfg.Settings  - Deleted entity synthetic identifier rollback: disabled
+1208 [main] DEBUG org.hibernate.cfg.Settings  - Default entity-mode: pojo
+1208 [main] DEBUG org.hibernate.cfg.Settings  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+1208 [main] DEBUG org.hibernate.cfg.Settings  - Allow initialization of lazy state outside session : disabled
+1208 [main] DEBUG org.hibernate.cfg.Settings  - Using BatchFetchStyle : LEGACY
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Default batch fetch size: -1
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Maximum outer join fetch depth: 5
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Default null ordering: NONE
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Order SQL updates by primary key: disabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Order SQL inserts for batching: disabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - multi-tenancy strategy : NONE
+1209 [main] DEBUG org.hibernate.cfg.Settings  - JTA Track by Thread: enabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Query language substitutions: {}
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Named query checking : enabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Second-level cache: disabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Second-level query cache: disabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Second-level query cache factory: null
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Second-level cache region prefix: null
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Optimize second-level cache for minimal puts: disabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Structured second-level cache entries: disabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Second-level cache direct-reference entries: disabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Automatic eviction of collection cache: disabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - JDBC batch size: 15
+1209 [main] DEBUG org.hibernate.cfg.Settings  - JDBC batch updates for versioned data: enabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Scrollable result sets: enabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Wrap result sets: disabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - JDBC3 getGeneratedKeys(): enabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - JDBC result set fetch size: null
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Connection release mode: AFTER_TRANSACTION
+1209 [main] DEBUG org.hibernate.cfg.Settings  - Generate SQL with comments: disabled
+1209 [main] DEBUG org.hibernate.cfg.Settings  - JPA compliance - query : 
+1210 [main] DEBUG org.hibernate.cfg.Settings  - JPA compliance - closed-handling : 
+1210 [main] DEBUG org.hibernate.cfg.Settings  - JPA compliance - lists : 
+1210 [main] DEBUG org.hibernate.cfg.Settings  - JPA compliance - transactions : 
+1270 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Session factory constructed with filter configurations : {}
+1270 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, java.class.path=C:\Projects\HibernateTest\target\classes;C:\Users\Csore_A_Tamas\.m2\repository\mysql\mysql-connector-java\8.0.12\mysql-connector-java-8.0.12.jar;C:\Users\Csore_A_Tamas\.m2\repository\com\google\protobuf\protobuf-java\2.6.0\protobuf-java-2.6.0.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\hibernate\hibernate-core\5.4.1.Final\hibernate-core-5.4.1.Final.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\Csore_A_Tamas\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\Csore_A_Tamas\.m2\repository\net\bytebuddy\byte-buddy\1.9.5\byte-buddy-1.9.5.jar;C:\Users\Csore_A_Tamas\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\Csore_A_Tamas\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\Csore_A_Tamas\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\Csore_A_Tamas\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Csore_A_Tamas\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Csore_A_Tamas\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Csore_A_Tamas\.m2\repository\org\reflections\reflections\0.9.11\reflections-0.9.11.jar;C:\Users\Csore_A_Tamas\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\Csore_A_Tamas\.m2\repository\log4j\apache-log4j-extras\1.2.17\apache-log4j-extras-1.2.17.jar;C:\Users\Csore_A_Tamas\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=, os.name=Windows 10, java.vm.specification.version=1.8, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_162\jre\bin, sun.java.command=csat.hibernatetest.Application, sun.cpu.endian=little, user.home=C:\Users\Csore_A_Tamas, user.language=en, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files\Java\jdk1.8.0_162\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_162\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_162\jre\classes, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_162-b12, user.name=Csore_A_Tamas, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_162\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test?useSSL=false, file.encoding=Cp1252, hibernate.max_fetch_depth=5, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.current_session_context_class=thread, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\CSORE_~1\AppData\Local\Temp\, java.version=1.8.0_162, user.dir=C:\Projects\HibernateTest, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@3015db78, java.library.path=C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramFiles\MinGw\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files (x86)\Skype\Phone\;C:\ProgramData\chocolatey\bin;C:\ProgramFiles\CMake\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramFiles\apache-maven-3.6.0\bin;C:\Users\Csore_A_Tamas\AppData\Local\Microsoft\WindowsApps;C:\Users\Csore_A_Tamas\AppData\Roaming\npm;., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.162-b12, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.pool_size=1, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.io.unicode.encoding=UnicodeLittle, java.class.version=52.0}
+1281 [main] DEBUG org.hibernate.secure.spi.JaccIntegrator  - Skipping JACC integration as it was not enabled
+1282 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Instantiated session factory
+1282 [main] DEBUG org.hibernate.type.spi.TypeConfiguration$Scope  - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5ae81e1] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4c2869a9]
+1357 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - Not known whether passed class name [csat.hibernatetest.jpa.E] is safe
+1357 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : csat.hibernatetest.jpa.E
+1373 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - Not known whether passed class name [csat.hibernatetest.jpa.E] is safe
+1373 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : csat.hibernatetest.jpa.E
+1576 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - Not known whether passed class name [csat.hibernatetest.jpa.D] is safe
+1576 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : csat.hibernatetest.jpa.D
+1577 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - Not known whether passed class name [csat.hibernatetest.jpa.D] is safe
+1577 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : csat.hibernatetest.jpa.D
+1590 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - Not known whether passed class name [csat.hibernatetest.jpa.A] is safe
+1590 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : csat.hibernatetest.jpa.A
+1590 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - Not known whether passed class name [csat.hibernatetest.jpa.A] is safe
+1590 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : csat.hibernatetest.jpa.A
+1602 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - Not known whether passed class name [csat.hibernatetest.jpa.C] is safe
+1602 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : csat.hibernatetest.jpa.C
+1602 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - Not known whether passed class name [csat.hibernatetest.jpa.C] is safe
+1602 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : csat.hibernatetest.jpa.C
+1611 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - Not known whether passed class name [csat.hibernatetest.jpa.B] is safe
+1611 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : csat.hibernatetest.jpa.B
+1611 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - Not known whether passed class name [csat.hibernatetest.jpa.B] is safe
+1611 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl  - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : csat.hibernatetest.jpa.B
+1623 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  - Static SQL for entity: csat.hibernatetest.jpa.E
+1623 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Version select: select `id` from `test`.`e` where `id` =?
+1623 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Snapshot select: select e_.`id`, e_.`some_field` as some_fie2_4_ from `test`.`e` e_ where e_.`id`=?
+1623 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Insert 0: insert into `test`.`e` (`some_field`, `id`) values (?, ?)
+1623 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Update 0: update `test`.`e` set `some_field`=? where `id`=?
+1623 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Delete 0: delete from `test`.`e` where `id`=?
+1623 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Identity insert: insert into `test`.`e` (`some_field`) values (?)
+1642 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5634d0f4]
+1643 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : someField
+1643 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy  - Building LoadPlan...
+1653 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor  - processing queryspace <gen:0>
+1657 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter  - LoadPlan(entity=csat.hibernatetest.jpa.E)
+    - Returns
+       - EntityReturnImpl(entity=csat.hibernatetest.jpa.E, querySpaceUid=<gen:0>, path=csat.hibernatetest.jpa.E)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=csat.hibernatetest.jpa.E)
+          - SQL table alias mapping - e0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+1658 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader  - Static select for entity csat.hibernatetest.jpa.E [NONE]: select e0_.`id` as id1_4_0_, e0_.`some_field` as some_fie2_4_0_ from `test`.`e` e0_ where e0_.`id`=?
+1658 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2b6fcb9f]
+1659 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : someField
+1659 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy  - Building LoadPlan...
+1659 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor  - processing queryspace <gen:0>
+1659 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter  - LoadPlan(entity=csat.hibernatetest.jpa.E)
+    - Returns
+       - EntityReturnImpl(entity=csat.hibernatetest.jpa.E, querySpaceUid=<gen:0>, path=csat.hibernatetest.jpa.E)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=csat.hibernatetest.jpa.E)
+          - SQL table alias mapping - e0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+1659 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader  - Static select for entity csat.hibernatetest.jpa.E [READ]: select e0_.`id` as id1_4_0_, e0_.`some_field` as some_fie2_4_0_ from `test`.`e` e0_ where e0_.`id`=?
+1674 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_MERGE on entity csat.hibernatetest.jpa.E: select e0_.`id` as id1_4_0_, e0_.`some_field` as some_fie2_4_0_ from `test`.`e` e0_ where e0_.`id`=?
+1674 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_REFRESH on entity csat.hibernatetest.jpa.E: select e0_.`id` as id1_4_0_, e0_.`some_field` as some_fie2_4_0_ from `test`.`e` e0_ where e0_.`id`=?
+1674 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  - Static SQL for entity: csat.hibernatetest.jpa.D
+1674 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Version select: select `id` from `test`.`d` where `id` =?
+1674 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Snapshot select: select d_.`id`, d_.`E_id` as E_id3_3_, d_.`some_field` as some_fie2_3_ from `test`.`d` d_ where d_.`id`=?
+1674 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Insert 0: insert into `test`.`d` (`E_id`, `some_field`, `id`) values (?, ?, ?)
+1674 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Update 0: update `test`.`d` set `E_id`=?, `some_field`=? where `id`=?
+1674 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Delete 0: delete from `test`.`d` where `id`=?
+1674 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Identity insert: insert into `test`.`d` (`E_id`, `some_field`) values (?, ?)
+1675 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7dbe2ebf]
+1675 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : e
+1678 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@512d6e60]
+1680 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : e.someField
+1680 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : someField
+1680 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy  - Building LoadPlan...
+1680 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor  - processing queryspace <gen:0>
+1681 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter  - LoadPlan(entity=csat.hibernatetest.jpa.D)
+    - Returns
+       - EntityReturnImpl(entity=csat.hibernatetest.jpa.D, querySpaceUid=<gen:0>, path=csat.hibernatetest.jpa.D)
+          - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.E, querySpaceUid=<gen:1>, path=csat.hibernatetest.jpa.D.e)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=csat.hibernatetest.jpa.D)
+          - SQL table alias mapping - d0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(e)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=csat.hibernatetest.jpa.E)
+                - SQL table alias mapping - e1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_4_1_}
+
+1681 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader  - Static select for entity csat.hibernatetest.jpa.D [NONE]: select d0_.`id` as id1_3_0_, d0_.`E_id` as E_id3_3_0_, d0_.`some_field` as some_fie2_3_0_, e1_.`id` as id1_4_1_, e1_.`some_field` as some_fie2_4_1_ from `test`.`d` d0_ left outer join `test`.`e` e1_ on d0_.`E_id`=e1_.`id` where d0_.`id`=?
+1681 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6cbd0674]
+1681 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : e
+1681 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19a64eae]
+1681 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : e.someField
+1681 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : someField
+1682 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy  - Building LoadPlan...
+1682 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor  - processing queryspace <gen:0>
+1682 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter  - LoadPlan(entity=csat.hibernatetest.jpa.D)
+    - Returns
+       - EntityReturnImpl(entity=csat.hibernatetest.jpa.D, querySpaceUid=<gen:0>, path=csat.hibernatetest.jpa.D)
+          - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.E, querySpaceUid=<gen:1>, path=csat.hibernatetest.jpa.D.e)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=csat.hibernatetest.jpa.D)
+          - SQL table alias mapping - d0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(e)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=csat.hibernatetest.jpa.E)
+                - SQL table alias mapping - e1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_4_1_}
+
+1682 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader  - Static select for entity csat.hibernatetest.jpa.D [READ]: select d0_.`id` as id1_3_0_, d0_.`E_id` as E_id3_3_0_, d0_.`some_field` as some_fie2_3_0_, e1_.`id` as id1_4_1_, e1_.`some_field` as some_fie2_4_1_ from `test`.`d` d0_ left outer join `test`.`e` e1_ on d0_.`E_id`=e1_.`id` where d0_.`id`=?
+1682 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_MERGE on entity csat.hibernatetest.jpa.D: select d0_.`id` as id1_3_0_, d0_.`E_id` as E_id3_3_0_, d0_.`some_field` as some_fie2_3_0_ from `test`.`d` d0_ where d0_.`id`=?
+1683 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_REFRESH on entity csat.hibernatetest.jpa.D: select d0_.`id` as id1_3_0_, d0_.`E_id` as E_id3_3_0_, d0_.`some_field` as some_fie2_3_0_ from `test`.`d` d0_ where d0_.`id`=?
+1683 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  - Static SQL for entity: csat.hibernatetest.jpa.A
+1683 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Version select: select `id` from `test`.`a` where `id` =?
+1683 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Snapshot select: select a_.`id`, a_.`B_id` as B_id3_0_, a_.`C_id` as C_id4_0_, a_.`D_id` as D_id5_0_, a_.`some_field` as some_fie2_0_ from `test`.`a` a_ where a_.`id`=?
+1683 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Insert 0: insert into `test`.`a` (`B_id`, `C_id`, `D_id`, `some_field`, `id`) values (?, ?, ?, ?, ?)
+1683 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Update 0: update `test`.`a` set `B_id`=?, `C_id`=?, `D_id`=?, `some_field`=? where `id`=?
+1683 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Delete 0: delete from `test`.`a` where `id`=?
+1683 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Identity insert: insert into `test`.`a` (`B_id`, `C_id`, `D_id`, `some_field`) values (?, ?, ?, ?)
+1683 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2da3b078]
+1683 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : b
+1683 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7fb66650]
+1683 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : b.someField
+1683 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c
+1683 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2a869a16]
+1684 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c.d
+1684 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@46aa712c]
+1684 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c.d.e
+1684 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7412ed6b]
+1684 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c.d.e.someField
+1684 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c.d.someField
+1684 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c.someField
+1684 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d
+1684 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7b4a0aef]
+1684 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d.e
+1684 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Property path deemed to be circular : d.e
+1685 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d.someField
+1685 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : someField
+1685 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy  - Building LoadPlan...
+1685 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor  - processing queryspace <gen:0>
+1686 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter  - LoadPlan(entity=csat.hibernatetest.jpa.A)
+    - Returns
+       - EntityReturnImpl(entity=csat.hibernatetest.jpa.A, querySpaceUid=<gen:0>, path=csat.hibernatetest.jpa.A)
+          - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.B, querySpaceUid=<gen:1>, path=csat.hibernatetest.jpa.A.b)
+          - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.C, querySpaceUid=<gen:2>, path=csat.hibernatetest.jpa.A.c)
+             - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.D, querySpaceUid=<gen:3>, path=csat.hibernatetest.jpa.A.c.d)
+                - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.E, querySpaceUid=<gen:4>, path=csat.hibernatetest.jpa.A.c.d.e)
+          - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.D, querySpaceUid=<gen:5>, path=csat.hibernatetest.jpa.A.d)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=csat.hibernatetest.jpa.A)
+          - SQL table alias mapping - a0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(b)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=csat.hibernatetest.jpa.B)
+                - SQL table alias mapping - b1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+          - JOIN (JoinDefinedByMetadata(c)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=csat.hibernatetest.jpa.C)
+                - SQL table alias mapping - c2_
+                - alias suffix - 2_
+                - suffixed key columns - {id1_2_2_}
+                - JOIN (JoinDefinedByMetadata(d)) : <gen:2> -> <gen:3>
+                   - EntityQuerySpaceImpl(uid=<gen:3>, entity=csat.hibernatetest.jpa.D)
+                      - SQL table alias mapping - d3_
+                      - alias suffix - 3_
+                      - suffixed key columns - {id1_3_3_}
+                      - JOIN (JoinDefinedByMetadata(e)) : <gen:3> -> <gen:4>
+                         - EntityQuerySpaceImpl(uid=<gen:4>, entity=csat.hibernatetest.jpa.E)
+                            - SQL table alias mapping - e4_
+                            - alias suffix - 4_
+                            - suffixed key columns - {id1_4_4_}
+          - JOIN (JoinDefinedByMetadata(d)) : <gen:0> -> <gen:5>
+             - EntityQuerySpaceImpl(uid=<gen:5>, entity=csat.hibernatetest.jpa.D)
+                - SQL table alias mapping - d5_
+                - alias suffix - 5_
+                - suffixed key columns - {id1_3_5_}
+
+1686 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader  - Static select for entity csat.hibernatetest.jpa.A [NONE]: select a0_.`id` as id1_0_0_, a0_.`B_id` as B_id3_0_0_, a0_.`C_id` as C_id4_0_0_, a0_.`D_id` as D_id5_0_0_, a0_.`some_field` as some_fie2_0_0_, b1_.`id` as id1_1_1_, b1_.`some_field` as some_fie2_1_1_, c2_.`id` as id1_2_2_, c2_.`D_id` as D_id3_2_2_, c2_.`some_field` as some_fie2_2_2_, d3_.`id` as id1_3_3_, d3_.`E_id` as E_id3_3_3_, d3_.`some_field` as some_fie2_3_3_, e4_.`id` as id1_4_4_, e4_.`some_field` as some_fie2_4_4_, d5_.`id` as id1_3_5_, d5_.`E_id` as E_id3_3_5_, d5_.`some_field` as some_fie2_3_5_ from `test`.`a` a0_ left outer join `test`.`b` b1_ on a0_.`B_id`=b1_.`id` left outer join `test`.`c` c2_ on a0_.`C_id`=c2_.`id` left outer join `test`.`d` d3_ on c2_.`D_id`=d3_.`id` left outer join `test`.`e` e4_ on d3_.`E_id`=e4_.`id` left outer join `test`.`d` d5_ on a0_.`D_id`=d5_.`id` where a0_.`id`=?
+1686 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@37b52340]
+1686 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : b
+1686 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2f4e40d7]
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : b.someField
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c
+1687 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e5843db]
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c.d
+1687 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@188ac8a3]
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c.d.e
+1687 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@aaa0f76]
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c.d.e.someField
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c.d.someField
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : c.someField
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d
+1687 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7a8b9166]
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d.e
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Property path deemed to be circular : d.e
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d.someField
+1687 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : someField
+1687 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy  - Building LoadPlan...
+1687 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor  - processing queryspace <gen:0>
+1688 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter  - LoadPlan(entity=csat.hibernatetest.jpa.A)
+    - Returns
+       - EntityReturnImpl(entity=csat.hibernatetest.jpa.A, querySpaceUid=<gen:0>, path=csat.hibernatetest.jpa.A)
+          - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.B, querySpaceUid=<gen:1>, path=csat.hibernatetest.jpa.A.b)
+          - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.C, querySpaceUid=<gen:2>, path=csat.hibernatetest.jpa.A.c)
+             - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.D, querySpaceUid=<gen:3>, path=csat.hibernatetest.jpa.A.c.d)
+                - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.E, querySpaceUid=<gen:4>, path=csat.hibernatetest.jpa.A.c.d.e)
+          - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.D, querySpaceUid=<gen:5>, path=csat.hibernatetest.jpa.A.d)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=csat.hibernatetest.jpa.A)
+          - SQL table alias mapping - a0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(b)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=csat.hibernatetest.jpa.B)
+                - SQL table alias mapping - b1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+          - JOIN (JoinDefinedByMetadata(c)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=csat.hibernatetest.jpa.C)
+                - SQL table alias mapping - c2_
+                - alias suffix - 2_
+                - suffixed key columns - {id1_2_2_}
+                - JOIN (JoinDefinedByMetadata(d)) : <gen:2> -> <gen:3>
+                   - EntityQuerySpaceImpl(uid=<gen:3>, entity=csat.hibernatetest.jpa.D)
+                      - SQL table alias mapping - d3_
+                      - alias suffix - 3_
+                      - suffixed key columns - {id1_3_3_}
+                      - JOIN (JoinDefinedByMetadata(e)) : <gen:3> -> <gen:4>
+                         - EntityQuerySpaceImpl(uid=<gen:4>, entity=csat.hibernatetest.jpa.E)
+                            - SQL table alias mapping - e4_
+                            - alias suffix - 4_
+                            - suffixed key columns - {id1_4_4_}
+          - JOIN (JoinDefinedByMetadata(d)) : <gen:0> -> <gen:5>
+             - EntityQuerySpaceImpl(uid=<gen:5>, entity=csat.hibernatetest.jpa.D)
+                - SQL table alias mapping - d5_
+                - alias suffix - 5_
+                - suffixed key columns - {id1_3_5_}
+
+1688 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader  - Static select for entity csat.hibernatetest.jpa.A [READ]: select a0_.`id` as id1_0_0_, a0_.`B_id` as B_id3_0_0_, a0_.`C_id` as C_id4_0_0_, a0_.`D_id` as D_id5_0_0_, a0_.`some_field` as some_fie2_0_0_, b1_.`id` as id1_1_1_, b1_.`some_field` as some_fie2_1_1_, c2_.`id` as id1_2_2_, c2_.`D_id` as D_id3_2_2_, c2_.`some_field` as some_fie2_2_2_, d3_.`id` as id1_3_3_, d3_.`E_id` as E_id3_3_3_, d3_.`some_field` as some_fie2_3_3_, e4_.`id` as id1_4_4_, e4_.`some_field` as some_fie2_4_4_, d5_.`id` as id1_3_5_, d5_.`E_id` as E_id3_3_5_, d5_.`some_field` as some_fie2_3_5_ from `test`.`a` a0_ left outer join `test`.`b` b1_ on a0_.`B_id`=b1_.`id` left outer join `test`.`c` c2_ on a0_.`C_id`=c2_.`id` left outer join `test`.`d` d3_ on c2_.`D_id`=d3_.`id` left outer join `test`.`e` e4_ on d3_.`E_id`=e4_.`id` left outer join `test`.`d` d5_ on a0_.`D_id`=d5_.`id` where a0_.`id`=?
+1688 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_MERGE on entity csat.hibernatetest.jpa.A: select a0_.`id` as id1_0_0_, a0_.`B_id` as B_id3_0_0_, a0_.`C_id` as C_id4_0_0_, a0_.`D_id` as D_id5_0_0_, a0_.`some_field` as some_fie2_0_0_ from `test`.`a` a0_ where a0_.`id`=?
+1688 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_REFRESH on entity csat.hibernatetest.jpa.A: select a0_.`id` as id1_0_0_, a0_.`B_id` as B_id3_0_0_, a0_.`C_id` as C_id4_0_0_, a0_.`D_id` as D_id5_0_0_, a0_.`some_field` as some_fie2_0_0_ from `test`.`a` a0_ where a0_.`id`=?
+1689 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  - Static SQL for entity: csat.hibernatetest.jpa.C
+1689 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Version select: select `id` from `test`.`c` where `id` =?
+1689 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Snapshot select: select c_.`id`, c_.`D_id` as D_id3_2_, c_.`some_field` as some_fie2_2_ from `test`.`c` c_ where c_.`id`=?
+1689 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Insert 0: insert into `test`.`c` (`D_id`, `some_field`, `id`) values (?, ?, ?)
+1689 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Update 0: update `test`.`c` set `D_id`=?, `some_field`=? where `id`=?
+1689 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Delete 0: delete from `test`.`c` where `id`=?
+1689 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Identity insert: insert into `test`.`c` (`D_id`, `some_field`) values (?, ?)
+1689 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@10c72a6f]
+1689 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d
+1689 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56cfe111]
+1689 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d.e
+1689 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@57f9b467]
+1689 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d.e.someField
+1689 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d.someField
+1689 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : someField
+1689 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy  - Building LoadPlan...
+1689 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor  - processing queryspace <gen:0>
+1690 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter  - LoadPlan(entity=csat.hibernatetest.jpa.C)
+    - Returns
+       - EntityReturnImpl(entity=csat.hibernatetest.jpa.C, querySpaceUid=<gen:0>, path=csat.hibernatetest.jpa.C)
+          - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.D, querySpaceUid=<gen:1>, path=csat.hibernatetest.jpa.C.d)
+             - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.E, querySpaceUid=<gen:2>, path=csat.hibernatetest.jpa.C.d.e)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=csat.hibernatetest.jpa.C)
+          - SQL table alias mapping - c0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(d)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=csat.hibernatetest.jpa.D)
+                - SQL table alias mapping - d1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(e)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=csat.hibernatetest.jpa.E)
+                      - SQL table alias mapping - e2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_4_2_}
+
+1690 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader  - Static select for entity csat.hibernatetest.jpa.C [NONE]: select c0_.`id` as id1_2_0_, c0_.`D_id` as D_id3_2_0_, c0_.`some_field` as some_fie2_2_0_, d1_.`id` as id1_3_1_, d1_.`E_id` as E_id3_3_1_, d1_.`some_field` as some_fie2_3_1_, e2_.`id` as id1_4_2_, e2_.`some_field` as some_fie2_4_2_ from `test`.`c` c0_ left outer join `test`.`d` d1_ on c0_.`D_id`=d1_.`id` left outer join `test`.`e` e2_ on d1_.`E_id`=e2_.`id` where c0_.`id`=?
+1690 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@44b29496]
+1690 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d
+1690 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3078cac]
+1690 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d.e
+1690 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5f2bd6d9]
+1690 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d.e.someField
+1690 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : d.someField
+1690 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : someField
+1690 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy  - Building LoadPlan...
+1690 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor  - processing queryspace <gen:0>
+1691 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter  - LoadPlan(entity=csat.hibernatetest.jpa.C)
+    - Returns
+       - EntityReturnImpl(entity=csat.hibernatetest.jpa.C, querySpaceUid=<gen:0>, path=csat.hibernatetest.jpa.C)
+          - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.D, querySpaceUid=<gen:1>, path=csat.hibernatetest.jpa.C.d)
+             - EntityAttributeFetchImpl(entity=csat.hibernatetest.jpa.E, querySpaceUid=<gen:2>, path=csat.hibernatetest.jpa.C.d.e)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=csat.hibernatetest.jpa.C)
+          - SQL table alias mapping - c0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(d)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=csat.hibernatetest.jpa.D)
+                - SQL table alias mapping - d1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(e)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=csat.hibernatetest.jpa.E)
+                      - SQL table alias mapping - e2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_4_2_}
+
+1691 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader  - Static select for entity csat.hibernatetest.jpa.C [READ]: select c0_.`id` as id1_2_0_, c0_.`D_id` as D_id3_2_0_, c0_.`some_field` as some_fie2_2_0_, d1_.`id` as id1_3_1_, d1_.`E_id` as E_id3_3_1_, d1_.`some_field` as some_fie2_3_1_, e2_.`id` as id1_4_2_, e2_.`some_field` as some_fie2_4_2_ from `test`.`c` c0_ left outer join `test`.`d` d1_ on c0_.`D_id`=d1_.`id` left outer join `test`.`e` e2_ on d1_.`E_id`=e2_.`id` where c0_.`id`=?
+1691 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_MERGE on entity csat.hibernatetest.jpa.C: select c0_.`id` as id1_2_0_, c0_.`D_id` as D_id3_2_0_, c0_.`some_field` as some_fie2_2_0_ from `test`.`c` c0_ where c0_.`id`=?
+1691 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_REFRESH on entity csat.hibernatetest.jpa.C: select c0_.`id` as id1_2_0_, c0_.`D_id` as D_id3_2_0_, c0_.`some_field` as some_fie2_2_0_ from `test`.`c` c0_ where c0_.`id`=?
+1691 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  - Static SQL for entity: csat.hibernatetest.jpa.B
+1691 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Version select: select `id` from `test`.`b` where `id` =?
+1691 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Snapshot select: select b_.`id`, b_.`some_field` as some_fie2_1_ from `test`.`b` b_ where b_.`id`=?
+1691 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Insert 0: insert into `test`.`b` (`some_field`, `id`) values (?, ?)
+1691 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Update 0: update `test`.`b` set `some_field`=? where `id`=?
+1691 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Delete 0: delete from `test`.`b` where `id`=?
+1691 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Identity insert: insert into `test`.`b` (`some_field`) values (?)
+1691 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@43d9f1a2]
+1691 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : someField
+1691 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy  - Building LoadPlan...
+1692 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor  - processing queryspace <gen:0>
+1692 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter  - LoadPlan(entity=csat.hibernatetest.jpa.B)
+    - Returns
+       - EntityReturnImpl(entity=csat.hibernatetest.jpa.B, querySpaceUid=<gen:0>, path=csat.hibernatetest.jpa.B)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=csat.hibernatetest.jpa.B)
+          - SQL table alias mapping - b0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+1692 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader  - Static select for entity csat.hibernatetest.jpa.B [NONE]: select b0_.`id` as id1_1_0_, b0_.`some_field` as some_fie2_1_0_ from `test`.`b` b0_ where b0_.`id`=?
+1692 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl  - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2264ea32]
+1692 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker  - Visiting attribute path : someField
+1692 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy  - Building LoadPlan...
+1692 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor  - processing queryspace <gen:0>
+1692 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter  - LoadPlan(entity=csat.hibernatetest.jpa.B)
+    - Returns
+       - EntityReturnImpl(entity=csat.hibernatetest.jpa.B, querySpaceUid=<gen:0>, path=csat.hibernatetest.jpa.B)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=csat.hibernatetest.jpa.B)
+          - SQL table alias mapping - b0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+1692 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader  - Static select for entity csat.hibernatetest.jpa.B [READ]: select b0_.`id` as id1_1_0_, b0_.`some_field` as some_fie2_1_0_ from `test`.`b` b0_ where b0_.`id`=?
+1692 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_MERGE on entity csat.hibernatetest.jpa.B: select b0_.`id` as id1_1_0_, b0_.`some_field` as some_fie2_1_0_ from `test`.`b` b0_ where b0_.`id`=?
+1692 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_REFRESH on entity csat.hibernatetest.jpa.B: select b0_.`id` as id1_1_0_, b0_.`some_field` as some_fie2_1_0_ from `test`.`b` b0_ where b0_.`id`=?
+1716 [main] DEBUG org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator  - No actions specified; doing nothing
+1721 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository  - Checking 0 named HQL queries
+1721 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository  - Checking 0 named SQL queries
+1722 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@6f231ced
+1724 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Registering SessionFactory: df17088f-ed91-4578-9814-469483bec0f7 (<unnamed>)
+1724 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Not binding SessionFactory to JNDI, no JNDI name configured
+1795 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator  - Statistics initialized [enabled=false]
+1802 [main] INFO main  - GET ENTITY
+1814 [main] DEBUG org.hibernate.SQL  - select a0_.`id` as id1_0_0_, a0_.`B_id` as B_id3_0_0_, a0_.`C_id` as C_id4_0_0_, a0_.`D_id` as D_id5_0_0_, a0_.`some_field` as some_fie2_0_0_, b1_.`id` as id1_1_1_, b1_.`some_field` as some_fie2_1_1_, c2_.`id` as id1_2_2_, c2_.`D_id` as D_id3_2_2_, c2_.`some_field` as some_fie2_2_2_, d3_.`id` as id1_3_3_, d3_.`E_id` as E_id3_3_3_, d3_.`some_field` as some_fie2_3_3_, e4_.`id` as id1_4_4_, e4_.`some_field` as some_fie2_4_4_, d5_.`id` as id1_3_5_, d5_.`E_id` as E_id3_3_5_, d5_.`some_field` as some_fie2_3_5_ from `test`.`a` a0_ left outer join `test`.`b` b1_ on a0_.`B_id`=b1_.`id` left outer join `test`.`c` c2_ on a0_.`C_id`=c2_.`id` left outer join `test`.`d` d3_ on c2_.`D_id`=d3_.`id` left outer join `test`.`e` e4_ on d3_.`E_id`=e4_.`id` left outer join `test`.`d` d5_ on a0_.`D_id`=d5_.`id` where a0_.`id`=?
+Hibernate: select a0_.`id` as id1_0_0_, a0_.`B_id` as B_id3_0_0_, a0_.`C_id` as C_id4_0_0_, a0_.`D_id` as D_id5_0_0_, a0_.`some_field` as some_fie2_0_0_, b1_.`id` as id1_1_1_, b1_.`some_field` as some_fie2_1_1_, c2_.`id` as id1_2_2_, c2_.`D_id` as D_id3_2_2_, c2_.`some_field` as some_fie2_2_2_, d3_.`id` as id1_3_3_, d3_.`E_id` as E_id3_3_3_, d3_.`some_field` as some_fie2_3_3_, e4_.`id` as id1_4_4_, e4_.`some_field` as some_fie2_4_4_, d5_.`id` as id1_3_5_, d5_.`E_id` as E_id3_3_5_, d5_.`some_field` as some_fie2_3_5_ from `test`.`a` a0_ left outer join `test`.`b` b1_ on a0_.`B_id`=b1_.`id` left outer join `test`.`c` c2_ on a0_.`C_id`=c2_.`id` left outer join `test`.`d` d3_ on c2_.`D_id`=d3_.`id` left outer join `test`.`e` e4_ on d3_.`E_id`=e4_.`id` left outer join `test`.`d` d5_ on a0_.`D_id`=d5_.`id` where a0_.`id`=?
+1838 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl  - Starting ResultSet row #0
+1840 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl  - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+1848 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Resolving associations for [csat.hibernatetest.jpa.A#10]
+1851 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Done materializing entity [csat.hibernatetest.jpa.A#10]
+1851 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Resolving associations for [csat.hibernatetest.jpa.B#20]
+1851 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Done materializing entity [csat.hibernatetest.jpa.B#20]
+1851 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Resolving associations for [csat.hibernatetest.jpa.C#30]
+1851 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Done materializing entity [csat.hibernatetest.jpa.C#30]
+1851 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Resolving associations for [csat.hibernatetest.jpa.D#41]
+1851 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Done materializing entity [csat.hibernatetest.jpa.D#41]
+1851 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Resolving associations for [csat.hibernatetest.jpa.E#51]
+1851 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Done materializing entity [csat.hibernatetest.jpa.E#51]
+1851 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Resolving associations for [csat.hibernatetest.jpa.D#40]
+1851 [main] DEBUG org.hibernate.SQL  - select e0_.`id` as id1_4_0_, e0_.`some_field` as some_fie2_4_0_ from `test`.`e` e0_ where e0_.`id`=?
+Hibernate: select e0_.`id` as id1_4_0_, e0_.`some_field` as some_fie2_4_0_ from `test`.`e` e0_ where e0_.`id`=?
+1852 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl  - Starting ResultSet row #0
+1852 [main] DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl  - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+1853 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Resolving associations for [csat.hibernatetest.jpa.E#50]
+1853 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Done materializing entity [csat.hibernatetest.jpa.E#50]
+1853 [main] DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl  - HHH000387: ResultSet's statement was not registered
+1853 [main] DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader  - Done entity load : csat.hibernatetest.jpa.E#50
+1854 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad  - Done materializing entity [csat.hibernatetest.jpa.D#40]
+1854 [main] DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl  - HHH000387: ResultSet's statement was not registered
+1854 [main] DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader  - Done entity load : csat.hibernatetest.jpa.A#10
+1854 [main] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl  - Initiating JDBC connection release from afterTransaction
+1854 [main] INFO main  - ENTITY SUCCESSFULLY RETRIEVED
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  3.210 s
+Finished at: 2019-02-15T09:37:36+01:00
+------------------------------------------------------------------------
