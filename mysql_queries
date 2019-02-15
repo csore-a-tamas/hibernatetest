@@ -1,0 +1,76 @@
+CREATE SCHEMA `test`;
+
+CREATE TABLE `test`.`a` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `some_field` VARCHAR(45) NULL,
+  `B_id` INT(11) NULL,
+  `C_id` INT(11) NULL,
+  `D_id` INT(11) NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `test`.`b` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `some_field` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `test`.`c` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `some_field` VARCHAR(45) NULL,
+  `D_id` INT(11) NULL,
+  PRIMARY KEY (`id`));
+  
+CREATE TABLE `test`.`d` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `some_field` VARCHAR(45) NULL,
+  `E_id` INT(11) NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `test`.`e` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `some_field` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+  
+INSERT INTO `test`.`a` (`id`, `some_field`, `B_id`, `C_id`, `D_id`) VALUES ('10', 'a_10', '20', '30', '40');
+INSERT INTO `test`.`b` (`id`, `some_field`) VALUES ('20', 'b_20');
+INSERT INTO `test`.`c` (`id`, `some_field`, `D_id`) VALUES ('30', 'c_30', '41');
+INSERT INTO `test`.`d` (`id`, `some_field`, `E_id`) VALUES ('40', 'd_40', '50');
+INSERT INTO `test`.`d` (`id`, `some_field`, `E_id`) VALUES ('41', 'd_41', '51');
+INSERT INTO `test`.`e` (`id`, `some_field`) VALUES ('50', 'd_50');
+INSERT INTO `test`.`e` (`id`, `some_field`) VALUES ('51', 'd_51');
+
+
+
+/*
+
+The data in JSON:
+
+{
+	"id": 10,
+	"someField": "a_10",
+	"b": {
+		"id": 20,
+		"someField": "b_20"
+	},
+	"c": {
+		"id": 30,
+		"someField": "c_30",
+		"d": {
+			"id": 41,
+			"someField": "d_41",
+			"e": {
+				"id": 51,
+				"someField": "d_51"
+			}
+		}
+	},
+	"d": {
+		"id": 40,
+		"someField": "d_40",
+		"e": {
+			"id": 50,
+			"someField": "d_50"
+		}
+	}
+}
+
+*/
